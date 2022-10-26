@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.ionicon {
+  height: 25px;
+}
+
+.icons button {
+  cursor: pointer;
+  background: #444;
+  padding: 10px 10px;
+  border-radius: 12px;
+  margin: 0px 20px;
+  border: none;
+  width: -webkit-max-content !important;
+  width: -moz-max-content !important;
+  width: max-content !important;
+}
+
+body {
+  background: #333;
+}
+
+#header {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #222;
+}
+
+.search {
+  height: 40px;
+  width: 300px;
+  color: white;
+  font-size: 25px;
+  background: #222;
+  border-radius: 30px;
+  padding: 10px 25px;
+  border: 2px solid orangered;
+  outline: none;
+}
+
+.addtodo:active {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  -webkit-box-shadow: 0px 0px 0px #672600;
+          box-shadow: 0px 0px 0px #672600;
+}
+
+.addtodo {
+  -webkit-transition: -webkit-box-shadow .1s ease 0s, -webkit-transform .1s ease 0s;
+  transition: -webkit-box-shadow .1s ease 0s, -webkit-transform .1s ease 0s;
+  transition: box-shadow .1s ease 0s, transform .1s ease 0s;
+  transition: box-shadow .1s ease 0s, transform .1s ease 0s, -webkit-box-shadow .1s ease 0s, -webkit-transform .1s ease 0s;
+  background: orangered;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-weight: 1000;
+  -webkit-box-shadow: 0px 5px 0px #672600;
+          box-shadow: 0px 5px 0px #672600;
+  text-shadow: 2px 2px 10px black;
+  border-radius: 20px;
+}
+
+.Todo {
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  width: 400px;
+  background: white !important;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  color: black !important;
+  padding: 30px;
+  border-radius: 40px;
+  border: 2px solid orangered;
+}
+
+.Todo button {
+  padding: 8px 15px;
+  background: blue;
+  cursor: pointer;
+  border-radius: 30px;
+  color: white;
+  border: none;
+  margin: 5px 0px;
+}
+
+.Todo ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  list-style-type: none !important;
+  font-weight: 700;
+}
+
+.Todo ul li {
+  width: 100% !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+.Todo ul li input {
+  margin-left: 20px;
+}
+
+ul {
+  margin: 20px 0px;
+  color: black;
+  list-style-position: inside;
+  list-style-type: disc !important;
+}
+
+.TodoWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+}
+
+.popup {
+  color: black !important;
+  position: fixed;
+  padding: 70px 30px 30px 30px;
+  top: 50%;
+  border-radius: 30px;
+  background: white;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 600px;
+  width: 450px;
+}
+
+.popup .popup-close {
+  cursor: pointer;
+  font-size: 50px;
+  position: absolute;
+  right: 40px;
+  top: 20px;
+}
+
+.plitka {
+  width: 100% !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  height: 150px !important;
+  margin-bottom: 20px;
+}
+
+.plitka p {
+  width: 30% !important;
+  color: green !important;
+}
+
+.todoss {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.fade-enter-active, .fade-leave-active {
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.line {
+  width: 100% !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+.line h2 {
+  max-width: 300px;
+}
+
+.line p {
+  text-align: left;
+  max-width: 400px !important;
+}
+
+.line .button-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.linewrp {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input-wrapper input {
+  margin: 5px 0px;
+  height: 30px;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
